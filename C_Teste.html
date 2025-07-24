@@ -1,0 +1,125 @@
+<section id="tela-cadastro-testes" class="screen">
+    <h2 class="screen-title"><i class="fas fa-clipboard-list"></i> Cadastro de Testes</h2>
+    
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title"><i class="fas fa-plus"></i> Novo Teste</h3>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="nome-teste"><i class="fas fa-heading"></i> Nome do Teste</label>
+                <input type="text" id="nome-teste" placeholder="Nome do teste">
+            </div>
+            <div class="form-group">
+                <label for="descricao-teste"><i class="fas fa-align-left"></i> Descrição</label>
+                <textarea id="descricao-teste" rows="2" placeholder="Descrição do teste"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tempo-teste"><i class="fas fa-clock"></i> Tempo Limite (minutos)</label>
+                <input type="number" id="tempo-teste" value="30">
+            </div>
+            
+            <div class="card" style="margin-top: 15px;">
+                <div class="card-header">
+                    <h4 class="card-title"><i class="fas fa-question"></i> Questões do Teste</h4>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Selecionar</th>
+                                <th>ID</th>
+                                <th>Enunciado</th>
+                                <th>Dificuldade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Q001</td>
+                                <td>Quanto é 5 + 7?</td>
+                                <td>Fácil</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Q002</td>
+                                <td>Qual é a capital do Brasil?</td>
+                                <td>Fácil</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Q003</td>
+                                <td>Explique o que é fotossíntese</td>
+                                <td>Médio</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Q004</td>
+                                <td>Qual é o maior planeta do sistema solar?</td>
+                                <td>Fácil</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn">Salvar Teste <i class="fas fa-save"></i></button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title"><i class="fas fa-list"></i> Testes Cadastrados</h3>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Questões</th>
+                        <th>Tempo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T001</td>
+                        <td>Matemática Básica</td>
+                        <td>10</td>
+                        <td>30 min</td>
+                        <td>
+                            <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-purple" style="padding: 5px 10px;"><i class="fas fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>T002</td>
+                        <td>Lógica e Raciocínio</td>
+                        <td>15</td>
+                        <td>45 min</td>
+                        <td>
+                            <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-purple" style="padding: 5px 10px;"><i class="fas fa-eye"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>T003</td>
+                        <td>Memória Visual</td>
+                        <td>8</td>
+                        <td>20 min</td>
+                        <td>
+                            <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                            <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                            <button class="btn btn-purple" style="padding: 5px 10px;"><i class="fas fa-eye"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

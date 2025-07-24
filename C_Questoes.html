@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro de Questões</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='mai.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <section id="tela-cadastro-questoes" class="screen">
+        <h2 class="screen-title"><i class="fas fa-question-circle"></i> Cadastro de Questões</h2>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-plus"></i> Nova Questão</h3>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="teste-questao"><i class="fas fa-book"></i> Teste Associado</label>
+                    <select id="teste-questao">
+                        <option value="">Selecione o teste</option>
+                        <option value="1">Matemática Básica</option>
+                        <option value="2">Lógica e Raciocínio</option>
+                        <option value="3">Memória Visual</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="enunciado"><i class="fas fa-align-left"></i> Enunciado da Questão</label>
+                    <textarea id="enunciado" rows="3" placeholder="Digite o enunciado da questão"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-questao"><i class="fas fa-tasks"></i> Tipo de Questão</label>
+                    <select id="tipo-questao">
+                        <option value="">Selecione o tipo</option>
+                        <option value="multipla">Múltipla Escolha</option>
+                        <option value="dissertativa">Dissertativa</option>
+                        <option value="verdadeiro">Verdadeiro/Falso</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dificuldade"><i class="fas fa-signal"></i> Dificuldade</label>
+                    <select id="dificuldade">
+                        <option value="">Selecione a dificuldade</option>
+                        <option value="facil">Fácil</option>
+                        <option value="medio">Médio</option>
+                        <option value="dificil">Difícil</option>
+                    </select>
+                </div>
+                
+                <div id="alternativas-container">
+                    <div class="card" style="margin-top: 15px;">
+                        <div class="card-header">
+                            <h4 class="card-title"><i class="fas fa-list"></i> Alternativas</h4>
+                        </div>
+                        <div class="form-group">
+                            <label>Alternativa 1</label>
+                            <input type="text" placeholder="Texto da alternativa">
+                            <label style="display: flex; align-items: center; gap: 5px; margin-top: 5px;">
+                                <input type="checkbox"> Correta
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Alternativa 2</label>
+                            <input type="text" placeholder="Texto da alternativa">
+                            <label style="display: flex; align-items: center; gap: 5px; margin-top: 5px;">
+                                <input type="checkbox"> Correta
+                            </label>
+                        </div>
+                        <div style="text-align: center; margin-top: 10px;">
+                            <button class="btn">Adicionar Alternativa <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <button class="btn">Salvar Questão <i class="fas fa-save"></i></button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-list"></i> Questões Cadastradas</h3>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Enunciado</th>
+                            <th>Tipo</th>
+                            <th>Dificuldade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Q001</td>
+                            <td>Quanto é 5 + 7?</td>
+                            <td>Múltipla Escolha</td>
+                            <td>Fácil</td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q002</td>
+                            <td>Qual é a capital do Brasil?</td>
+                            <td>Múltipla Escolha</td>
+                            <td>Fácil</td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Q003</td>
+                            <td>Explique o que é fotossíntese</td>
+                            <td>Dissertativa</td>
+                            <td>Médio</td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

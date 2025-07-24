@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;
+  height: 17cm;
+  background-image: url(Fundo.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tudo {
+  text-align: center;
+  padding: 2rem;
+}
+
+.Esc h1 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.Esc p {
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #292929;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #020023;
+}
